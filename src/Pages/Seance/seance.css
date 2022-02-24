@@ -1,0 +1,319 @@
+#facility {
+	background-color: #E2E1E1;
+    background-size:10%;
+    position:relative;
+    padding: 120px 0;
+    width: 100%;   
+	overflow:hidden;
+}
+#facility::before {
+    background:rgba(255, 255, 255, 0.5);
+    content:"";
+    height: 10%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#facility h1 {
+    font-size: 42px !important;
+	font-family: "Oswald";
+}
+#facility h1 span 
+{
+    color:#ff4c00;
+}
+
+
+
+
+@media (min-width:320px) and (max-width:680px) 
+{
+    header {  
+    height: 674px;
+}
+ header .header-content {
+    margin-top: 97px;
+    text-align: center;
+    height:300px;
+}
+.header-content h2 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.header-content h3 {
+    color: #ff4c00;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.header-content p {
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+.header-content img {
+    position: relative;
+    width: 76%;
+    z-index: 999;
+}
+.headding p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+.navbar-collapse {
+    background: #ff4c00;
+}
+.textcenter.animated img {
+    width: 50% !important;
+}
+#facility {
+    padding: 80px 0;
+}
+#how-it-works {
+    padding: 80px 0;
+}
+.angle::before {
+    border-bottom: 72px solid #333;
+    border-right: 600px solid transparent;
+    left: 0;
+}
+.angle::before, .angle::after {
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle::after {
+    border-bottom: 72px solid #333;
+    border-left: 600px solid transparent;
+    right: 0;
+}
+.angle2::before {
+    border-top: 72px solid #333;
+    border-right: 600px solid transparent;
+    left: 0;
+}
+.angle2::before, .angle2::after {
+    top: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle2::after {
+    border-top: 72px solid #333;
+    border-left: 600px solid transparent;
+    right: 0;
+}
+}
+@media (min-width:768px) and (max-width:1024px) {
+  header {
+        height: 530px;
+    }
+    .header-content h2 {
+    font-size: 20px;
+       margin-bottom: 11px;
+}
+.header-content h3 {  
+    font-size: 18px;
+    margin-bottom: 11px;
+}
+.header-content p {
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+.btn-ornge .fa-cloud-download {
+    border-radius: 15px;
+     padding: 14px;
+}
+.header-content .btn-ornge {
+    border-radius: 15px;
+    padding: 0 0 0 16px;
+}
+.iconfont {
+    margin-top: 15px;
+}
+.iconfont2 {
+    margin-right: -32px;
+    margin-top: 15px;
+    float:right;
+}
+.col-xs-12.col-sm-4.col-md-4.wow.bounceIn.textcenter.animated > img {
+    width: 100%;
+}
+.textleft {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: left;
+}
+.textright {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: left;
+}
+.angle::before {
+    border-bottom: 30px solid #333;
+    border-right: 960px solid transparent;
+    left: 0;
+}
+.angle::before, .angle::after {
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle::after {
+    border-bottom: 30px solid #333;
+    border-left: 960px solid transparent;
+    right: 0;
+}
+.angle2::before {
+    border-top: 30px solid #333;
+    border-right: 960px solid transparent;
+    left: 0;
+}
+.angle2::before, .angle2::after {
+    top: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle2::after {
+    border-top: 30px solid #333;
+    border-left: 960px solid transparent;
+    right: 0;
+}
+
+}
+@media (max-width:480px) 
+{
+    header {  
+    height: 578px;
+}
+ header .header-content {
+    margin-top: 97px;
+    text-align: center;
+    height:300px;
+}
+.header-content h2 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.header-content h3 {
+    color: #ff4c00;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.header-content p {
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 28px;
+}
+.header-content img {
+    position: relative;
+    width: 76%;
+    z-index: 999;
+}
+.headding p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+.navbar-collapse {
+    background: #ff4c00;
+}
+.textcenter.animated img {
+    width: 50% !important;
+}
+#facility {
+    padding: 80px 0;
+}
+#how-it-works {
+    padding: 80px 0;
+}
+.angle::before {
+    border-bottom: 30px solid #333;
+    border-right: 480px solid transparent;
+    left: 0;
+}
+.angle::before, .angle::after {
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle::after {
+    border-bottom: 30px solid #333;
+    border-left: 480px solid transparent;
+    right: 0;
+}
+.angle2::before {
+    border-top: 30px solid #333;
+    border-right: 480px solid transparent;
+    left: 0;
+}
+.angle2::before, .angle2::after {
+    top: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle2::after {
+    border-top: 30px solid #333;
+    border-left: 480px solid transparent;
+    right: 0;
+}
+}
+@media (max-width:360px) 
+{
+       header {  
+    height: 544px;
+}
+.angle::before {
+    border-bottom: 30px solid #333;
+    border-right: 320px solid transparent;
+    left: 0;
+}
+.angle::before, .angle::after {
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle::after {
+    border-bottom: 30px solid #333;
+    border-left: 320px solid transparent;
+    right: 0;
+}
+.angle2::before {
+    border-top: 30px solid #333;
+    border-right: 320px solid transparent;
+    left: 0;
+}
+.angle2::before, .angle2::after {
+    top: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 4;
+}
+.angle2::after {
+    border-top: 30px solid #333;
+    border-left: 320px solid transparent;
+    right: 0;
+}}
