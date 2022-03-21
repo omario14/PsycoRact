@@ -80,8 +80,8 @@ export default function Nav() {
                                     </li>
                                     {languages.map(({ code, name, country_code }) => (
                                         <li key={country_code}>
-                                            <a
-                                                href="#"
+                                            <a href="/"
+                                                
                                                 className={classNames('dropdown-item', {
                                                     disabled: currentLanguageCode === code,
                                                 })}
