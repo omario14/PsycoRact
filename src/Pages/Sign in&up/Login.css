@@ -1,0 +1,9 @@
+.login,
+.image {
+  min-height: 100vh;
+}
+.bg-image {
+  background-image: url('../../../public/assets/images/Psychologist-rafiki.svg');
+  background-size: cover;
+  background-position: center center;
+}

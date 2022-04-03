@@ -8,20 +8,39 @@ import Doc from './Pages/Doctores/doc';
 import Consult from './Pages/consultation/consult';
 
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Login from './Pages/Sign in&up/Login';
 
-function App() {
-  
-  return (
-    <div className="App">
-      
-      <Nav/>
+const Main =()=>(
+  <>
+   <Nav/>
       <Home/>
       <About/>
       <Seance/>
       <Doc/>
       <Consult/>
       <Footer/>
+  </>
+)
+ 
+ 
+function App() {
+  
+  return (
+    <div className="App">
+      <Router>
+
+
+     <Routes>
+       <Route  path="/login" element={<Login/>}/>
+       <Route path="/" element={<Main/>}/>
+     </Routes>
      
+      </Router>
 
     </div>
   );
