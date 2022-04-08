@@ -7,6 +7,8 @@ import Seance from './Pages/Seance/seance';
 import Doc from './Pages/Doctores/doc';
 import Consult from './Pages/consultation/consult';
 
+import { history } from './helpers/history';
+
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,6 +16,7 @@ import {
   Route
 } from "react-router-dom";
 import Login from './Pages/Sign in&up/Login';
+import DashboardPsy from './Pages/dashboardPsy/DashboardPsy';
 
 const Main =()=>(
   <>
@@ -32,11 +35,12 @@ function App() {
   
   return (
     <div className="App">
-      <Router>
+      <Router history={history}>
 
 
      <Routes>
-       <Route  path="/login" element={<Login/>}/>
+       <Route  path="/login" element={<Login />}/>
+       <Route  path="/dashboardpsy" element={<DashboardPsy/>}/>
        <Route path="/" element={<Main/>}/>
      </Routes>
      

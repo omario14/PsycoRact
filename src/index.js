@@ -5,6 +5,7 @@ import { initReactI18next } from 'react-i18next'
 import HttpApi from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import 'bootstrap/dist/js/bootstrap.js'
+import store from './store';
 
 
 
@@ -14,6 +15,7 @@ import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'flag-icon-css/css/flag-icons.min.css'
+import { Provider } from 'react-redux';
 
 i18next
   .use(HttpApi)
@@ -43,7 +45,9 @@ i18next
 ReactDOM.render(
   <Suspense fallback={loadingMarkup}>
     <React.StrictMode>
+    <Provider store={store}>
       <App />
+      </Provider>
     </React.StrictMode>
   </Suspense>,
   document.getElementById('root')

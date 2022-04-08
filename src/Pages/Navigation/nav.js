@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
 import classNames from 'classnames'
+import { IoLogIn } from "react-icons/io5";
+import {
+    NavLink
+} from 'react-router-dom'
 
 import './nav.css';
 
@@ -105,8 +109,8 @@ export default function Nav() {
                     </div>
 
 
-                    <a class="navbar-brand" href="/">
-                        <img src="../../../assets/images/img/rotaractlogo.png" alt="" width="30" height="30" class="d-inline-block " />
+                    <a className="navbar-brand" href="/">
+                        <img src="../../../assets/images/img/rotaractlogo.png" alt="" width="30" height="30" className="d-inline-block " />
                         <a href="#home" className="logo"><span>P</span>syco<span>R</span>act.</a>
                     </a>
 
@@ -117,6 +121,7 @@ export default function Nav() {
                             <li><a href="#facility">{t('session')}</a></li>
                             <li><a href="#review">{t('psychologists')}</a></li>
                             <li><a href="#consultation">{t('appointment')}</a></li>
+                            <li><NavLink to="/login"><span><IoLogIn/></span></NavLink></li>
 
                         </ul>
                     </nav>
