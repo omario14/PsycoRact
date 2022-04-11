@@ -3,12 +3,10 @@ import { connect } from "react-redux";
 import psyService from "../../Services/psy.service";
 import "./DashboardPsy.css";
 import Nav from "./NavBar/Nav";
-import moment from "moment";
 
-class DashboardPsy extends Component {
+class ConsultedRequests extends Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
     this.state = {
       requests: [""],
       successful: false,
@@ -16,24 +14,11 @@ class DashboardPsy extends Component {
   }
 
   componentDidMount() {
-    psyService.affich().then((res) => {
-      const requests = res.data;
+    psyService.getAcceptedRequest().then((res) => {
+      const requests = res.data.filter((r) => r.status === 2);
       this.setState({ requests });
       console.log(requests);
     });
-  }
-
-  handleClick(id) {
-    let isMounted = true;
-    //const { history } = this.props;
-
-    if (isMounted) {
-      psyService.acceptRequest(id).then(() => {
-        //history.push("/acceptedRequests");
-      });
-    }
-
-    return (isMounted = false);
   }
 
   render() {
@@ -48,15 +33,11 @@ class DashboardPsy extends Component {
                   <table className="tablee table-responsive-xl">
                     <thead>
                       <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
                         <th>Email</th>
                         <th>Phone number</th>
                         <th>Username</th>
-                        <th>Birthdate</th>
                         <th>Country</th>
                         <th>City</th>
-                        <th>&nbsp;</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -68,41 +49,18 @@ class DashboardPsy extends Component {
 										  <span className="checkmark"></span>
 										</label>
 						    	</td> */}
-                          <td>{request.clientFirstName}</td>
-                          <td>{request.clientLastName}</td>
                           <td className="d-flex align-items-center">
                             {/* <div className="img" style={{ backgroundImage : 'url("../../../assets/images/img/doctor_1.jpg")'}}></div> */}
                             <div className="pl-3 email">
                               <span>{request.clientMail}</span>
-                              <span style={{ color: "black" }}>
-                                Registered at :{" "}
-                                {moment(request.registerDate).format(
-                                  "MMMM Do YYYY"
-                                )}
-                              </span>
+                              <span>Added: 01/03/2020</span>
                             </div>
                           </td>
                           <td>{request.clientPhone}</td>
                           <td>{request.clientUsername}</td>
-                          <td>
-                            {moment(request.birthDate).format("MMMM Do YYYY")}
-                          </td>
                           <td>{request.country}</td>
                           <td>{request.city}</td>
                           {/* <td className="status"><span className="active">{request.status}</span></td> */}
-                          <td>
-                            <button
-                              type="button"
-                              class="btn btn-success"
-                              data-dismiss="alert"
-                              onClick={() => this.handleClick(request.id)}
-                            >
-                              Valider
-                              <span aria-hidden="true">
-                                <i className="fa fa-check"></i>
-                              </span>
-                            </button>
-                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -125,4 +83,4 @@ function mapStateToProps(state) {
     message,
   };
 }
-export default connect(mapStateToProps)(DashboardPsy);
+export default connect(mapStateToProps)(ConsultedRequests);

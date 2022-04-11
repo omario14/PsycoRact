@@ -1,16 +1,31 @@
 {
-    "app_title": "PsycoRact",
-    "language": "Langue",
-    "home": "Accueil",
-    "about": "A Propos",
-    "session": "Seance",
-    "psychologists": "Psychologues",
-    "appointment": "Rendez Vous",
-    "restez_1": "Restez",
-     "en_securite": "en sécurisé,",
-     "restez_2":"Restez",
-     "santer" : "en bon santer",
-     "soin" : "Prenez soin de vous.",
-     "plus":"plus"
-
-  }
+    "app_title": "WeCare",
+    "homepage": {
+        "phrase1": "Nous ",
+        "phrase2": "sommes attentifs,",
+        "phrase3": "Nous ",
+        "phrase4": "écoutons.",
+        "phrase5": "Vous ne serez jamais seuls.",
+        "button": "Consultez"
+    },
+    "aboutpage": {
+        "phrase1": "Une plateforme qui fait le lien entre les étudiants et des professionnels de la santé mentale.",
+        "phrase2": "sommes attentifs,",
+        "phrase3": "Nous ",
+        "phrase4": "écoutons.",
+        "phrase5": "Vous ne serez jamais seuls.",
+        "button": "Consultez"
+    },
+  "language": "Langue",
+  "home": "Accueil",
+  "about": "A Propos",
+  "session": "Seance",
+  "psychologists": "Psychologues",
+  "appointment": "Rendez Vous",
+  "restez_1": "Restez",
+  "en_securite": "en sécurisé,",
+  "restez_2": "Restez",
+  "santer": "en bon santer",
+  "soin": "Prenez soin de vous.",
+  "plus": "plus"
+}
