@@ -53,6 +53,8 @@ export default function Nav() {
   return (
     <div>
       <header>
+
+      
         <div className="container">
           <div className="language-select">
             <div className="d-flex justify-content-end align-items-center language-select-root">
@@ -112,8 +114,14 @@ export default function Nav() {
             </a>
           </a>
 
-          <nav className="nav">
-            <ul>
+          <nav>
+            
+      <input type="checkbox" id="check"/>
+      <label htmlFor="check" class="checkbtn">
+        <i className="fas fa-bars"></i>
+      </label>
+      
+      <ul>
               <li>
                 <a href="#home">{t("home")}</a>
               </li>
@@ -137,9 +145,8 @@ export default function Nav() {
                 </NavLink>
               </li>
             </ul>
-          </nav>
-
-          <div className="fas fa-bars"></div>
+    </nav>
+          
         </div>
       </header>
     </div>

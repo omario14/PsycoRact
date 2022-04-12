@@ -31,8 +31,18 @@
 @media (min-width:320px) and (max-width:680px) 
 {
     header {  
-    height: 674px;
+    height: 80px;
 }
+.checkbtn{
+    padding-right: -9px;
+}
+
+.navbar-brand{
+    position: relative;
+    font-size: 30px;
+    
+    padding-left: 50px;
+  }
  header .header-content {
     margin-top: 97px;
     text-align: center;
@@ -112,12 +122,23 @@
 }
 @media (min-width:768px) and (max-width:1024px) {
   header {
-        height: 530px;
+        height: 80px;
     }
     .header-content h2 {
     font-size: 20px;
        margin-bottom: 11px;
 }
+
+.checkbtn{
+    padding-right: -9px;
+}
+
+.navbar-brand{
+    position: relative;
+    font-size: 30px;
+    
+    padding-left: 50px;
+  }
 .header-content h3 {  
     font-size: 18px;
     margin-bottom: 11px;
@@ -197,8 +218,19 @@
 @media (max-width:480px) 
 {
     header {  
-    height: 578px;
+    height: 80px;
 }
+
+.checkbtn{
+    padding-right: -9px;
+}
+
+.navbar-brand{
+    position: relative;
+    font-size: 30px;
+    
+    padding-left: 50px;
+  }
  header .header-content {
     margin-top: 97px;
     text-align: center;
@@ -279,8 +311,19 @@
 @media (max-width:360px) 
 {
        header {  
-    height: 544px;
+    height: 80px;
 }
+
+.checkbtn{
+    padding-right: -9px;
+}
+
+.navbar-brand{
+    position: relative;
+    font-size: 30px;
+    
+    padding-left: 50px;
+  }
 .angle::before {
     border-bottom: 30px solid #333;
     border-right: 320px solid transparent;
